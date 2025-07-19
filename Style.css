@@ -1,0 +1,303 @@
+/* General Body and Typography */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column; /* Default for mobile */
+    gap: 20px;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    margin: 5px 0 0;
+    font-size: 1.1em;
+}
+
+/* Tool Section Styling */
+.tool-section {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    flex: 2; /* Takes more space in desktop view */
+}
+
+.tool-section h2 {
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 2em;
+}
+
+/* Input Area */
+.input-area {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.upload-btn {
+    display: inline-block;
+    background-color: #28a745;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.upload-btn:hover {
+    background-color: #218838;
+}
+
+.upload-btn input[type="file"] {
+    display: none;
+}
+
+.file-info {
+    margin-top: 15px;
+    font-size: 0.95em;
+    color: #555;
+}
+
+/* Controls and Image Previews */
+.controls {
+    border-top: 1px solid #eee;
+    padding-top: 25px;
+    margin-top: 25px;
+}
+
+.controls.hidden {
+    display: none;
+}
+
+.slider-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    flex-wrap: wrap; /* For responsiveness */
+}
+
+.slider-group label {
+    font-weight: bold;
+    margin-right: 15px;
+    font-size: 1.05em;
+    min-width: 150px; /* Ensures label doesn't shrink too much */
+}
+
+.slider-group input[type="range"] {
+    flex-grow: 1;
+    max-width: 400px;
+    -webkit-appearance: none;
+    height: 8px;
+    background: #ddd;
+    border-radius: 5px;
+    outline: none;
+    transition: opacity 0.2s;
+}
+
+.slider-group input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #007bff;
+    border-radius: 50%;
+    cursor: grab;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+}
+
+.slider-group input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #007bff;
+    border-radius: 50%;
+    cursor: grab;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+}
+
+.slider-group #qualityValue {
+    margin-left: 15px;
+    font-weight: bold;
+    color: #007bff;
+    min-width: 60px; /* Ensures value doesn't shrink too much */
+}
+
+.image-preview {
+    text-align: center;
+    margin-bottom: 25px;
+    padding: 15px;
+    border: 1px dashed #ccc;
+    border-radius: 5px;
+    background-color: #fcfcfc;
+}
+
+.image-preview h3 {
+    color: #007bff;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.image-preview img,
+.image-preview canvas {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Ensures they don't have extra space below */
+    margin: 0 auto;
+    border: 1px solid #eee;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.size-info {
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #666;
+}
+
+.download-btn {
+    display: block;
+    width: fit-content;
+    margin: 20px auto 0 auto;
+    background-color: #007bff;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.download-btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.message {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.1em;
+    color: #d9534f; /* Red for error/warning */
+    font-weight: bold;
+}
+
+/* Advertisement Containers */
+.ad-container {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px; /* Minimum height for ad space */
+    color: #888;
+    font-size: 0.9em;
+    flex: 1; /* Takes less space in desktop view */
+}
+
+.ad-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px dashed #bbb;
+    background-color: #e9e9e9;
+    color: #888;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    background-color: #333;
+    color: white;
+    font-size: 0.9em;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row; /* Side-by-side for larger screens */
+        align-items: flex-start; /* Align items to the top */
+    }
+
+    .tool-section {
+        flex: 2; /* Tool takes 2 parts */
+        margin-right: 20px; /* Space between tool and ads */
+    }
+
+    .ad-container {
+        flex: 1; /* Ads take 1 part */
+    }
+
+    .bottom-ad {
+        order: 1; /* Ensures bottom ad appears below top ad if ad sections are vertical */
+    }
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    .tool-section {
+        padding: 20px;
+    }
+
+    .tool-section h2 {
+        font-size: 1.8em;
+    }
+
+    .upload-btn {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+
+    .slider-group {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .slider-group label {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .slider-group #qualityValue {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .download-btn {
+        padding: 10px 20px;
+        font-size: 1.1em;
+    }
+}
