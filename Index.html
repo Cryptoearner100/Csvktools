@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Compressor Tool - Optimize Images Online</title>
+    <meta name="description" content="Compress images online easily. Optimize JPG and PNG images with adjustable quality settings. Fast, free, and efficient image optimization for web and social media.">
+    <meta name="keywords" content="image compressor, compress image, optimize image, reduce image size, JPG compressor, PNG compressor, online image compressor, free image compressor">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.yourwebsite.com/image-compressor"> <meta property="og:title" content="Image Compressor Tool - Optimize Images Online">
+    <meta property="og:description" content="Compress images online easily. Optimize JPG and PNG images with adjustable quality settings. Fast, free, and efficient image optimization for web and social media.">
+    <meta property="og:image" content="https://www.yourwebsite.com/images/og-image.jpg"> <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.yourwebsite.com/image-compressor"> <meta property="twitter:title" content="Image Compressor Tool - Optimize Images Online">
+    <meta property="twitter:description" content="Compress images online easily. Optimize JPG and PNG images with adjustable quality settings. Fast, free, and efficient image optimization for web and social media.">
+    <meta property="twitter:image" content="https://www.yourwebsite.com/images/twitter-image.jpg"> <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Image Compressor</h1>
+        <p>Optimize your images for web and social media</p>
+    </header>
+
+    <main class="container">
+        <section class="tool-section">
+            <h2>Compress Your Image</h2>
+            <div class="input-area">
+                <label for="imageUpload" class="upload-btn">
+                    <span>Upload Image</span>
+                    <input type="file" id="imageUpload" accept="image/*">
+                </label>
+                <p id="fileName" class="file-info"></p>
+            </div>
+
+            <div id="controls" class="controls hidden">
+                <div class="slider-group">
+                    <label for="qualitySlider">Compression Quality:</label>
+                    <input type="range" id="qualitySlider" min="10" max="100" value="80">
+                    <span id="qualityValue">80%</span>
+                </div>
+                <div class="image-preview">
+                    <h3>Original Image</h3>
+                    <img id="originalImagePreview" src="#" alt="Original Image Preview" style="display: none;">
+                    <p id="originalSize" class="size-info"></p>
+                </div>
+                <div class="image-preview">
+                    <h3>Compressed Image</h3>
+                    <canvas id="compressedImageCanvas" style="display: none; max-width: 100%; height: auto;"></canvas>
+                    <p id="compressedSize" class="size-info"></p>
+                </div>
+                <button id="downloadBtn" class="download-btn" style="display: none;">Download Compressed Image</button>
+            </div>
+            <p id="message" class="message"></p>
+        </section>
+
+        <section class="ad-container top-ad">
+            <div class="ad-placeholder" data-ad-unit-id="YOUR_ADSENSE_AD_UNIT_ID_1">
+                <p>Advertisement</p>
+            </div>
+        </section>
+
+        <section class="ad-container bottom-ad">
+            <div class="ad-placeholder" data-ad-unit-id="YOUR_ADSENSE_AD_UNIT_ID_2">
+                <p>Advertisement</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Image Compressor Tool. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-YOUR_ADSENSE_PUBLISHER_ID" crossorigin="anonymous"></script>
+</body>
+</html>
